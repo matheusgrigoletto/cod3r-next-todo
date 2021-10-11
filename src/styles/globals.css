@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-family: "Work Sans", sans-serif;
+  --bg-body: linear-gradient(135deg, #f2f2f2, #f8f8f8);
+  --text-color: #444;
+  --bg-main: #fff;
+
+  --HeaderButton--text-color: #222;
+  --HeaderButton--bg-focus: #0001;
+
+  --Checkbox--text-color: #fff;
+  --Checkbox--border-color: #222;
+  --Checkbox--bg-checked: #222;
+
+  --Form--input--border-color: #000;
+  --Form--input--border-color-focus: rgba(0, 0, 0, 0.5);
+  --Form--input--text-color: #444;
+  --Form--button--text-color: #fff;
+  --Form--button--bg-color: #000;
+
+  --ListItem--border-color: #888;
+  --ListItem--text-color: #333;
+  --ListItem--text-color-done: #c8c8c8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-body: linear-gradient(135deg, #333, #111);
+    --text-color: #fff;
+    --bg-main: #222;
+
+    --HeaderButton--text-color: #fff;
+    --HeaderButton--bg-focus: #0003;
+
+    --Checkbox--text-color: #000;
+    --Checkbox--border-color: #f2f2f2;
+    --Checkbox--bg-checked: #f2f2f2;
+
+    --Form--input--border-color: #fff;
+    --Form--input--border-color-focus: rgba(255, 255, 255, 0.5);
+    --Form--input--text-color: #f2f2f2;
+    --Form--button--text-color: #000;
+    --Form--button--bg-color: #fff;
+
+    --ListItem--border-color: #ccc;
+    --ListItem--text-color: #fff;
+    --ListItem--text-color-done: rgba(255, 255, 255, 0.25);
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: var(--font-family);
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg-body);
+  color: var(--text-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+button,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  height: 80vh;
+  min-height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: 10vh;
+  border-radius: 6px;
+  background: var(--bg-main);
+  box-shadow: 0 5px 15px #0003;
+  overflow: hidden;
+}
+
+main > article,
+main > footer {
+  width: 100%;
+}
+
+main > article {
+  overflow: auto;
+}
+
+main > footer {
+  display: flex;
+}

@@ -1,0 +1,32 @@
+.Form {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 100%;
+}
+
+.Form input {
+  padding: 0.5rem;
+  flex: 1 1 100%;
+  font-size: 1.25rem;
+  color: var(--Form--input--text-color);
+  border: 1px solid transparent;
+  border-top: 2px solid var(--Form--input--border-color);
+  border-bottom-left-radius: 6px;
+  background: transparent;
+}
+
+.Form input:focus {
+  outline: 0 none;
+  border-color: var(--Form--input--border-color-focus);
+  border-top-color: var(--Form--input--border-color);
+}
+
+.Form button {
+  padding: 0 0.75rem;
+  margin-left: 0;
+  flex: 1 1 48px;
+  color: var(--Form--button--text-color);
+  background: var(--Form--button--bg-color);
+  border: 0 none;
+  cursor: pointer;
+}

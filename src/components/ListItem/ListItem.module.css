@@ -1,0 +1,24 @@
+.ListItem {
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border-bottom: 1px solid var(--ListItem--border-color);
+  cursor: pointer;
+}
+
+.ListItem:last-child {
+  border-bottom: 0 none;
+}
+
+.ListItem span {
+  margin-left: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--ListItem--text-color);
+}
+
+.ListItem.done span {
+  color: var(--ListItem--text-color-done);
+  text-decoration: line-through;
+}

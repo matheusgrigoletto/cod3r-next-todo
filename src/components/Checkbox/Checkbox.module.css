@@ -1,0 +1,18 @@
+.Checkbox {
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Checkbox--text-color);
+  border-radius: 6px;
+  border: 3px solid var(--Checkbox--border-color);
+  cursor: pointer;
+  user-select: none;
+  transition: all 150ms ease-out;
+}
+
+.Checkbox.checked {
+  background: var(--Checkbox--bg-checked);
+}

@@ -1,0 +1,31 @@
+.HeaderButton {
+  padding: 0.5rem 1rem calc(0.5rem - 2px);
+  margin-right: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: var(--HeaderButton--text-color);
+  border: 0 none;
+  border-bottom: 2px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  outline: 0 none;
+}
+
+.HeaderButton:last-child {
+  margin-right: 0;
+}
+
+.HeaderButton:not(.HeaderButton.selected):hover,
+.HeaderButton:not(.HeaderButton.selected):active,
+.HeaderButton:not(.HeaderButton.selected):focus {
+  background-color: var(--HeaderButton--bg-focus);
+  outline: 0 none;
+}
+
+.HeaderButton.selected {
+  font-weight: 600;
+  border-radius: 4px 4px 0 0;
+  border-bottom-color: rgb(147, 5, 119);
+}
